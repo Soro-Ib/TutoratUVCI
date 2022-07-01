@@ -8,7 +8,6 @@
     <div class="card">
         <div class="card-body">
             <h5 class="card-title">Poster un document</h5>
-            
             <!-- No Labels Form -->
             <form action="#" method="POST" class="row g-3">
 
@@ -21,17 +20,10 @@
                         <option>Licence 2</option>
                     </select>
                 </div>
-
                 <div class="col-md-12">
-                    <label class="form-label">Document</label>
+                    <label class="form-label">Document ( pdf, word, excel, ppt, video )</label>
                     <input type="file" class="form-control">
                 </div>   
-                
-                <div class="col-md-12">
-                    <label class="form-label">Video</label>
-                    <input type="file" class="form-control" accept="video/*">
-                </div>  
-               
                 <div class="text-center">
                     <button type="submit" class="btn btn-primary">Envoyer</button>
                     <button type="reset" class="btn btn-secondary">Effacer</button>

@@ -42,11 +42,11 @@
                     <i class="bi bi-circle"></i><span>Programmer</span>
                     </a>
                 </li>
-                <li>
+                {{-- <li>
                     <a href="{{ route('classe.encours') }}">
                     <i class="bi bi-circle"></i><span>En cours</span>
                     </a>
-                </li>
+                </li> --}}
                 <li>
                     <a href="{{ route('classe.terminer') }}">
                     <i class="bi bi-circle"></i><span>Terminées</span>

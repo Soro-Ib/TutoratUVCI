@@ -34,6 +34,12 @@
                         <label class="form-label">Heure de fin</label>
                         <input type="time" name="heure_fin" id="" class="form-control">
                     </div>
+                </div>
+                <div class="mt-3 row">
+                    <div class="col-md-12">
+                        <label class="form-label">Lien de la rencontre</label>
+                        <input type="url" name="lien" id="" class="form-control">
+                    </div> 
                 </div>        
                 <div class="text-center">
                     <button type="submit" class="btn btn-primary">Enregistrer</button>
