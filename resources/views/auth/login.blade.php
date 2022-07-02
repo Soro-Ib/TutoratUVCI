@@ -2,31 +2,27 @@
 <html lang="en">
 
     <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Pages / Login - NiceAdmin Bootstrap Template</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+        <title>Pages / Login - NiceAdmin Bootstrap Template</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
 
-    <!-- Favicons -->
-    <link href="{{ asset('assets/img/favicon.png') }}" rel="icon">
-  <link href="{{ asset('assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+        <!-- Favicons -->
+        <link href="{{ asset('assets/img/favicon.png') }}" rel="icon">
+        <link href="{{ asset('assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+        <!-- Vendor CSS Files -->
+        <link href="{{asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
 
-    <!-- Vendor CSS Files -->
-    <link href="{{asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
-
-    <!-- Template Main CSS File -->
-    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
+        <!-- Template Main CSS File -->
+        <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
+        <link href="{{ asset('assets/css/login.css') }}" rel="stylesheet">
     </head>
 
     <body>
-
     <main>
         <div class="container">
             <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-2">
@@ -36,13 +32,16 @@
                         <div class="d-flex justify-content-center py-4">
                             <a href="#" class="logo d-flex align-items-center w-auto">
                                 {{-- <img src="assets/img/logo.png" alt=""> --}}
-                            <span class="d-none d-lg-block">Espace Tutorat</span>
+                            <span class="d-lg-block">Espace Tutorat</span>
                             </a>
                         </div><!-- End Logo -->
                         <div class="card mb-3">
                             <div class="card-body">
-                                <div class="pt-5 pb-5 text-center">
+                                <div class="pt-5 pb-4 text-center">
                                     <img src="{{ asset('image/logo-uvci.png') }}" alt="" width="90px">
+                                    <div class="text-center small pt-3">
+                                        Entrez vos paramètres de connexion
+                                    </div>
                                 </div>
                                 <form action="{{ route("login") }}" method="post" class="row g-3 needs-validation" novalidate>
                                     @csrf
