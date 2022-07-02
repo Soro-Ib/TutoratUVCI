@@ -13,7 +13,7 @@
         <div class="card">
           <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
             <img src="{{ asset('image/profile.jpg') }}" alt="Profile" class="rounded-circle">
-            <h2>Ibrahim Soro</h2>
+            <h2>{{ Auth::user()->name }}</h2>
             <h3>Data scientist</h3>
           </div>
         </div>
@@ -40,7 +40,7 @@
                 <h5 class="card-title">Details du profile</h5>
                 <div class="row">
                     <div class="col-lg-3 col-md-4 label ">Nom et Prenoms</div>
-                    <div class="col-lg-9 col-md-8">Ibrahim Soro</div>
+                    <div class="col-lg-9 col-md-8">{{ Auth::user()->name }}</div>
                 </div>
                 <div class="row">
                     <div class="col-lg-3 col-md-4 label">Poste</div>
@@ -56,7 +56,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-3 col-md-4 label">Email</div>
-                    <div class="col-lg-9 col-md-8">Kolotcholoman.soro@uvci.edu.ci</div>
+                    <div class="col-lg-9 col-md-8">{{ Auth::user()->email }}</div>
                 </div>
               </div>
 
