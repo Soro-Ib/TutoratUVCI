@@ -12,22 +12,20 @@
 
         <!-- Data-table -->
   
-          @include('admin.includes.datatable')
+          @if (Auth::user()->getRoleNames()[0]=="Tuteur")
+            @include('admin.includes.datatable')
           
         <!-- End Data-table -->
 
         <!-- Left side columns -->
-        
 
-        <!-- Right side columns --> 
+          <!-- Right side columns --> 
         <div class="col-lg-4">
 
           <!-- Website Traffic -->
           <div class="card">
-
             <div class="card-body pb-0">
               <h5 class="card-title">Etudiants par niveau d'étude </h5>
-
               <!-- Pie Chart -->
               <canvas id="pieChart" style="max-height: 400px;"></canvas>
               <script>
@@ -54,12 +52,10 @@
                   });
                 });
               </script>
-
             </div>
           </div><!-- End Website Traffic -->
-
         </div><!-- End Right side columns -->
-
+        @endif
       </div>
     </section>
 @endsection

@@ -10,13 +10,22 @@
             <h5 class="card-title">Noter la classe virtuelle</h5>
             <!-- No Labels Form -->
             <form action="#" method="POST" class="row g-3">
-                <div class="row">                   
+                <div class="row">
+                    <div class="col-md-12">                     
+                        {{-- <label class="form-label mt-2">Selectionner une classe virtuelle</label> --}}
+                        <select id="inputState" class="form-select">
+                            <option selected>Choix de la Classe Virtuelle</option>
+                            <option>Classe V1</option>
+                            <option>Classe V2</option>
+                            <option>Classe V3</option>
+                        </select>  
+                    </div>                    
                     <div class="col-md-12">
-                        
+                        <label class="mt-3 mb-2">Note</label>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="note" id="note1">
                             <label class="form-check-label" for="note1">
-                                Tres mal
+                                Très mal
                             </label>
                         </div>
                         <div class="form-check">
@@ -40,7 +49,7 @@
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="note" id="note5">
                             <label class="form-check-label" for="note5">
-                                Tres bon
+                                Très bon
                             </label>
                         </div>             
                     </div>             
@@ -49,7 +58,6 @@
                     <label class="form-label">Votre avis</label>
                     <textarea name="" id="" cols="10" rows="5" class="form-control"></textarea>
                 </div>   
-               
                 <div class="text-center">
                     <button type="submit" class="btn btn-primary">Envoyer</button>
                     <button type="reset" class="btn btn-secondary">Effacer</button>
